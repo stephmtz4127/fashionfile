@@ -1,0 +1,32 @@
+.formBtnCont {
+  display: flex;
+  height: 100px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(240, 240, 240);
+}
+
+.formsMainBtn {
+  border: none;
+  height: 30px;
+  text-align: center;
+  font-weight: bolder;
+  display: flex;
+  background-color: transparent;
+  letter-spacing: 3px;
+  border-bottom: 1px solid rgb(180, 178, 178);
+}
+
+.bothFormsContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.forms {
+  flex: 1;
+}
+
+.formsMainBtn:focus {
+  border-bottom: solid black 3px;
+}

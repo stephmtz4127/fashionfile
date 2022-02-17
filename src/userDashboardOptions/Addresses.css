@@ -1,0 +1,21 @@
+.btnDataCont {
+  display: flex;
+  height: 100%;
+  margin-top: 10px;
+  flex-direction: column;
+}
+
+.createAddBtn {
+  width: 140px;
+  height: 40px;
+  color: white;
+  background-color: rgb(221, 4, 185);
+  border: none;
+}
+.createAddBtn:hover {
+  background-color: rgb(211, 35, 182);
+}
+
+.createAddBtn:active {
+  box-shadow: 0px 0px 5px 2px hotpink;
+}

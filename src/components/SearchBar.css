@@ -1,0 +1,34 @@
+::placeholder {
+  color: rgb(211, 210, 210);
+}
+
+.searchContainer {
+  display: flex;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchInput {
+  height: 50px;
+  width: 350px;
+  border-style: none;
+  outline: none;
+  border: 0.5px solid rgb(211, 210, 210);
+}
+
+.searchInput:focus {
+  box-shadow: rgb(255, 40, 112) 0px 0px 7px 1px;
+  border: solid 1px rgb(255, 40, 112);
+}
+.searchIcon {
+  height: 55px;
+  width: 55px;
+  border-style: none;
+  border: 0.5px solid rgb(211, 210, 210);
+  background-color: white;
+}
+
+.searchIcon:hover {
+  border: solid 1px rgb(255, 40, 112);
+}

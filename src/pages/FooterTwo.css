@@ -1,0 +1,27 @@
+.f2Cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: white;
+}
+
+.footUl {
+  list-style: none;
+}
+
+.listLabel {
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.footLi {
+  font-weight: 330;
+  color: rgb(209, 209, 207);
+  margin: 6px 0px 9px 0px;
+  font-size: 18px;
+}
+
+.footLi:hover {
+  color: rgb(255, 1, 170);
+}

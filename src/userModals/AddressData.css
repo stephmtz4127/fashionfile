@@ -1,0 +1,37 @@
+.addressDataCont {
+  display: flex;
+  height: 280px;
+  width: 100%;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.addressDataLabel {
+  font-size: 23px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.addressDataBorder {
+  height: 220px;
+  width: 250px;
+  border-radius: 4px;
+  border: solid 1px rgb(201, 201, 201);
+  background-color: rgb(241, 241, 241);
+}
+
+.addressData {
+  height: 160px;
+  width: 230px;
+  margin: 10px 0px 0px 15px;
+  text-align: start;
+}
+
+.actualAddress {
+  margin-bottom: 10px;
+}
+
+.dropdownAddress {
+  margin-right: 22px;
+}

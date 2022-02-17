@@ -1,0 +1,85 @@
+.MainContainer {
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.homeImg {
+  height: 80vh;
+  width: auto;
+  object-fit: cover;
+}
+
+.textBtnCont {
+  position: absolute;
+  top: 45%;
+  width: 50%;
+}
+
+.text1Img {
+  font-weight: 600;
+  font-size: 20px;
+  padding-right: 340px;
+  margin-bottom: 30px;
+}
+
+.text2Img {
+  color: rgb(140, 190, 140);
+  font-weight: bolder;
+  font-size: 70px;
+  padding-right: 170px;
+  margin-bottom: 50px;
+}
+
+.btnCss {
+  display: flex;
+  margin-left: 245px;
+  margin-top: 20px;
+}
+.mainImgBtn {
+  padding: 21px 40px 21px 40px;
+  background-color: black;
+  color: white;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  text-decoration: none;
+}
+
+.mainImgBtn:hover {
+  background-color: rgb(110, 110, 110);
+}
+
+.featureImgCont {
+  display: flex;
+  flex-direction: row;
+}
+
+.ftLabel {
+  height: 50px;
+  width: 100%;
+  text-align: center;
+}
+.ft2Img {
+  height: 550px;
+  flex: 1;
+  object-fit: cover;
+}
+
+.ftLabel2 {
+  display: flex;
+  height: 100px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.ftText {
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.ftText:hover {
+  border-bottom: solid black 1px;
+}
