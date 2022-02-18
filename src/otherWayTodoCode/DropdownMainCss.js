@@ -15,7 +15,7 @@ export const DropdownMainCss = makeStyles({
       cursor: "pointer",
       color: "black",
       height: "20px",
-      // width: "120px",
+      width: "120px",
       backgroundColor: "rgb(238, 238, 238)",
       borderTop: "2px rgb(255, 0, 200) solid",
     },
