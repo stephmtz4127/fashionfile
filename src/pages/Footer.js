@@ -5,7 +5,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import PinterestIcon from "@mui/icons-material/Pinterest";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import FooterTwo from "./FooterTwo";
-import { Icon, Button } from "semantic-ui-react";
+// import { Icon, Button } from "semantic-ui-react";
 
 const Footer = () => {
   return (
@@ -19,7 +19,7 @@ const Footer = () => {
           <FacebookIcon className="footerTextSocial" />
           <PinterestIcon className="footerTextSocial" />
           <TwitterIcon className="footerTextSocial" />
-          <div style={{ display: "flex" }}>
+          {/* <div style={{ display: "flex" }}>
             <input
               className="footInput"
               placeholder="Subscribe"
@@ -28,7 +28,7 @@ const Footer = () => {
             <Button icon className="mailBtnCont">
               <Icon name="mail outline" className="footBtnIcon" />
             </Button>
-          </div>
+          </div> */}
         </div>
         <FooterTwo />
       </div>

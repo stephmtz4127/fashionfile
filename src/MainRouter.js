@@ -1,17 +1,12 @@
 import React from "react";
 import Footer from "./pages/Footer";
 import HomePage from "./pages/HomePage";
-// import Nav from "./pages/Nav";
-import NavTwo from "./otherWayTodoCode/NavTwo";
+import NavTwo from "./mainNav/NavTwo";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import SellPage from "./pages/SellPage";
 import FollowingPage from "./pages/Following";
-// import ShoppingBag from "./pages/ShoppingBag";
 import NewArrivals from "./redirectingPages/NewArrivals";
-import Designers from "./redirectingPages/Designers";
-import Sale from "./redirectingPages/Sale";
 import Bags from "./pages/Bags";
-import WomensPage from "./redirectingPages/WomensPage";
 import MensPage from "./redirectingPages/MensPage";
 import SubmitQuote from "./mockRedirectFiles/SubmitQuote";
 import VirtualAppointment from "./mockRedirectFiles/VirtualAppt";
@@ -32,23 +27,27 @@ import MySettings from "./userDashboardOptions/MySettings";
 import PaymentOptions from "./userDashboardOptions/PaymentOptions";
 import UserNPass from "./userDashboardOptions/UserNPass";
 import SellerStats from "./userDashboardOptions/SellerStats";
+import BagSelection from "./redirectingPages/BagSelection";
+import ShoppingCart from "./redirectingPages/ShoppingCart";
 // import AddressModal from "./userModals/AddressModal";
 
 const MainRouter = () => {
   return (
     <Router>
-      {/* <Nav /> */}
       <NavTwo />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/sell" element={<SellPage />} />
         <Route path="/following" element={<FollowingPage />} />
-        {/* <Route path="/shoppingBag" element={<ShoppingBag />} /> */}
         <Route path="/newArrivals" element={<NewArrivals />} />
-        <Route path="/designers" element={<Designers />} />
-        <Route path="/bags" element={<Bags />} />
-        <Route path="/sale" element={<Sale />} />
-        <Route path="/gift-guide-for-her" element={<WomensPage />} />
+        <Route path="/bags" element={<Bags />}>
+          {/* bags subroutes */}
+          <Route path=":group/:id" />
+        </Route>
+        {/* bag selected route */}
+        <Route path="/bag/:id" element={<BagSelection />} />
+        {/* route to shopping cart */}
+        <Route path="/shoppingCart" element={<ShoppingCart />} />
         <Route path="/gift-guide-for-him" element={<MensPage />} />
         <Route path="/submit-quote" element={<SubmitQuote />} />
         <Route path="/virtualAppointment" element={<VirtualAppointment />} />

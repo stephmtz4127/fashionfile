@@ -1,22 +1,23 @@
 import React from "react";
 import { DropdownMainCss } from "./DropdownMainCss";
 import { Dropdown, Menu } from "semantic-ui-react";
-import { brands } from "../data/Data";
+import { bagStyles } from "../data/Data";
+import { useNavigate } from "react-router-dom";
 
-export const DesignerDropdown = () => {
+export const BagsDropdown = () => {
   const classes = DropdownMainCss();
+  const navigate = useNavigate();
 
   const options = [];
-
-  brands.forEach((brand, index) => {
+  bagStyles.forEach((bag, index) => {
     options.push({
       key: index,
-      text: brand,
-      value: index,
+      text: bag.text,
+      value: bag.route,
     });
   });
+  console.log(options, "opvalue");
 
-  console.log("options", options);
   return (
     <>
       <Menu
@@ -29,9 +30,14 @@ export const DesignerDropdown = () => {
       >
         <Dropdown
           simple
-          text="Designers"
+          text="Bags"
           className={classes.navLinks}
-          options={options}
+          value={""}
+          options={options.sort((a, b) => a.text.localeCompare(b.text))}
+          onChange={(e, data) => {
+            navigate(data.value);
+            console.log(data.value, "value");
+          }}
           icon="none"
         />
       </Menu>

@@ -62,7 +62,7 @@
   align-items: center;
   justify-content: center;
 }
-.navLinks {
+.newArrivalLink {
   margin: 10px 15px 0px 10px;
   text-decoration: none;
   color: black;
@@ -70,15 +70,16 @@
   max-width: 110px;
   background-color: transparent;
   padding: 2px;
+  margin-bottom: 16px;
 }
 
-.navLinks:hover {
+.newArrivalLink:hover {
   cursor: pointer;
   color: black;
-  max-height: 30px;
+  max-height: 80px;
   max-width: 110px;
   background-color: rgb(238, 238, 238);
-  border-top: solid rgb(255, 0, 200) 2px;
+  border-top: solid #f09 2px;
 }
 
 .emtDiv {

@@ -38,7 +38,6 @@ const AddressData = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [address, setAddress] = useState({});
   const addresses = useSelector(getAddresses);
-  console.log("this is addresses", addresses);
   const user = useSelector(getUser);
   const dispatch = useDispatch();
 

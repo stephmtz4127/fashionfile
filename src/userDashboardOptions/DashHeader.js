@@ -18,7 +18,7 @@ const DashHeaderStyle = makeStyles({
     flexDirection: "column",
     justifyContent: "left",
     textAlign: "left",
-    borderLeft: "solid 4px rgb(221, 4, 185)",
+    borderLeft: "solid 4px #f09",
     borderTop: "1px solid rgb(204, 204, 204)",
     borderRight: "1px solid rgb(204, 204, 204)",
     borderBottom: "1px solid rgb(204, 204, 204)",
@@ -26,7 +26,7 @@ const DashHeaderStyle = makeStyles({
   pinkLabel: {
     fontSize: "30px",
     fontWeight: 400,
-    color: "rgb(221, 4, 185)",
+    color: "#f09",
     marginLeft: "30px",
     marginTop: "10px",
   },

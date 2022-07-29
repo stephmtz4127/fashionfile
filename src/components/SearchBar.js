@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 
-const designerNavigateUrl = "/designers";
+// const designerNavigateUrl = "/designers";
 
 const SearchBar = () => {
   const terms = useSelector(getSearchTerms);
@@ -18,7 +18,8 @@ const SearchBar = () => {
     e.preventDefault();
 
     if (terms) {
-      navigate(designerNavigateUrl);
+      dispatch(setSearchTerms(terms));
+      navigate("bags");
     }
   };
 

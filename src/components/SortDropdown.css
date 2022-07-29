@@ -1,0 +1,13 @@
+.sortDropCont {
+  display: "flex";
+  justify-content: "center";
+  flex-direction: "column";
+  height: 30px;
+}
+
+.sortDropSelect {
+  outline: none;
+  border: none;
+  width: 145px;
+  font-weight: bold;
+}

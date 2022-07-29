@@ -1,0 +1,47 @@
+.sellerInfoCont {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-top: 20px;
+  margin-left: "80px";
+}
+.sellerTitle {
+  font-weight: 500;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.seller.ui.dropdown {
+  padding: 0 !important;
+  color: black;
+  font-weight: 100;
+  border: solid rgb(202, 200, 200) 1px !important;
+  border-radius: "none" !important;
+  height: 30px;
+  width: 60% !important;
+  display: flex !important;
+  background-color: white !important;
+}
+
+.seller.ui.dropdown .text {
+  height: 28px;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.seller.ui.dropdown .icon {
+  color: #f09;
+  border-left: solid rgb(202, 200, 200) 1px;
+  width: 40px !important;
+  height: 28px !important;
+  display: flex;
+  float: unset !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.sellerMSG {
+  margin-top: 15px;
+  font-size: 15px;
+}

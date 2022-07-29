@@ -1,8 +1,9 @@
 .changePassCont {
-  height: 70%;
+  height: 350px;
   width: "800px ";
   background-color: rgb(241, 241, 241);
   margin-top: 15px;
+  margin-bottom: 20px;
   display: flex;
 }
 

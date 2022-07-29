@@ -5,6 +5,7 @@ import { v4 as uuidv4 } from "uuid";
 import { addAddress } from "../reducer/userSlice";
 import { getUser } from "../reducer/userSlice";
 import { Checkbox } from "semantic-ui-react";
+import { getAddresses } from "../reducer/userSlice";
 
 const OpenModal = ({ isVisible, setIsVisible }) => {
   if (!isVisible) {
@@ -26,6 +27,7 @@ const AddressForm = ({ setIsVisible }) => {
   const [zipCode, setZipCode] = useState("92677");
   const [phone, setPhone] = useState("6193922583");
   const dispatch = useDispatch();
+  const addresses = useSelector(getAddresses);
 
   const [addressStatus, setAddressStatus] = useState("");
 
@@ -77,6 +79,14 @@ const AddressForm = ({ setIsVisible }) => {
 
     setIsVisible(false);
   };
+  const sellerDisabled = Object.values(addresses).some((address) => {
+    if (address.status === "seller") {
+      return true;
+    } else {
+      return false;
+    }
+  });
+  console.log(sellerDisabled, "dis");
   return (
     <div className="modalBackground">
       <form className="addFormModal" onSubmit={onCreateAddress}>
@@ -156,6 +166,7 @@ const AddressForm = ({ setIsVisible }) => {
             label="Make Seller Address"
             onChange={() => setAddressStatus("seller")}
             checked={addressStatus === "seller"}
+            disabled={sellerDisabled}
           />
           <br />
           <Checkbox

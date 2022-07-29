@@ -1,0 +1,108 @@
+.bagSelectCont {
+  display: flex;
+  height: 100%;
+  margin-top: 10px;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.certificationCont {
+  display: flex;
+  justify-content: center;
+  height: 150px;
+  flex-direction: column;
+  background-color: rgb(243, 243, 243);
+}
+
+.certText {
+  font-weight: 800;
+}
+
+.guaranteeText {
+  margin-top: 10px;
+}
+
+.sellLuxCont {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: 20px 0 10px 0;
+  align-items: center;
+}
+
+.sellBackText {
+  display: inherit;
+  flex: 1;
+  height: 100px;
+  width: 50%;
+  background-color: rgb(243, 243, 243);
+  margin-right: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.layawayText {
+  display: inherit;
+  flex: 1;
+  height: 100px;
+  width: 50%;
+  background-color: rgb(243, 243, 243);
+  margin-left: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bagDescriptionCont {
+  display: flex;
+  width: 30%;
+  height: 100%;
+  margin-left: 50px;
+  margin-top: 10px;
+  text-align: left;
+  flex-direction: column;
+}
+
+.brandText {
+  font-size: 25px;
+  font-weight: bolder;
+  letter-spacing: 5px;
+  margin-bottom: 15px;
+}
+
+.labelText {
+  font-size: 20px;
+  font-weight: 100 !important;
+  margin-bottom: 10px;
+}
+
+.priceText {
+  font-size: 20px;
+  margin: 20px 0 10px 0;
+}
+
+.addBagBtn {
+  margin-top: 60px;
+  height: 50px;
+  width: 60%;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+.shipping {
+  width: 60%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.accordionText {
+  margin: 70px 0 40px 0;
+}
+
+.trademarkInfo {
+  margin-top: 20px;
+  font-size: 10px;
+}

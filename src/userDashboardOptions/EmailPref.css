@@ -1,0 +1,44 @@
+.emailSubCont {
+  display: flex;
+  height: 100%;
+  text-align: left;
+  flex-direction: column;
+  /* margin-top: 10px; */
+}
+
+.emailSentenceOne {
+  margin-bottom: 20px;
+  font-size: 16px;
+  margin-top: 20px;
+}
+.emailSentence {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.newsletterForm {
+  margin-top: 10px;
+}
+
+.checkboxText {
+  font-size: 18px !important;
+  font-weight: bolder !important;
+  margin-bottom: 15px;
+}
+.emailSubBtn {
+  width: 220px;
+  height: 35px;
+  padding-top: 3px;
+  border: none;
+  background-color: white;
+  border: solid rgb(207, 207, 207) 1px;
+  color: rgb(75, 74, 74);
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.emailSubBtn:hover {
+  border: none;
+  background-color: #f09;
+  color: white;
+}

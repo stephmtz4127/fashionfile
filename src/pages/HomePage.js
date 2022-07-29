@@ -11,7 +11,7 @@ const HomePage = () => {
         <div className="text2Img">Gift Guides</div>
         <div className="btnCss">
           <Link
-            to="/gift-guide-for-her"
+            to="bags"
             style={{ marginRight: "10px" }}
             className="mainImgBtn"
           >

@@ -5,6 +5,8 @@ const initialState = {
   user: {},
   loggedIn: false,
   addresses: {},
+  paymentOption: {},
+  newsletterBlog: {},
 };
 
 const userSlice = createSlice({
@@ -49,6 +51,12 @@ const userSlice = createSlice({
         delete state.addresses[address.id];
       });
     },
+    addPaymentOption: (state, action) => {
+      state.paymentOption = action.payload;
+    },
+    newsletterBlogOption: (state, action) => {
+      state.newsletterBlog = action.payload;
+    },
   },
 });
 
@@ -62,6 +70,8 @@ export const {
   editAddress,
   deleteAddress,
   deleteALLAddress,
+  addPaymentOption,
+  newsletterBlogOption,
 } = userSlice.actions;
 export const getUsers = (state) => state.users.users;
 export const getUser = (state) => state.users.user;

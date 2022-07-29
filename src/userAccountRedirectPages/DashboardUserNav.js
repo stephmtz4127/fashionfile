@@ -9,7 +9,7 @@ const DashboardUserNav = () => {
     return location.pathname.startsWith(url) ? "userNavTabOptionsActive" : "";
   };
   return (
-    <div className="userNavContainer">
+    <div className="iner">
       <div className="borderdiv">
         <div className="userNavTabs">
           <Link

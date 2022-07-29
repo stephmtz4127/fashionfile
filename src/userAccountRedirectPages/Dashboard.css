@@ -1,8 +1,8 @@
-.loginDashCont {
-  height: 440px;
-
+.loggedInUserDashCont {
+  height: 100%;
   display: flex;
-  margin-left: 400px;
+  /* margin-left: 400px; */
+  margin-left: 80px;
   margin-top: 20px;
 }
 
@@ -13,7 +13,7 @@
   border: solid rgb(204, 204, 204) 1px;
 }
 
-.loginDashlabels {
+.userDashlabels {
   height: 50px;
   display: flex;
   text-align: left;
@@ -25,11 +25,7 @@
   text-decoration: none;
 }
 
-/* .loginDashlabels:active {
-  background-color: gray;
-} */
-
-.loginDashlabels:hover {
+.userDashlabels:hover {
   background-color: rgb(236, 236, 236);
-  color: rgb(221, 4, 185);
+  color: #f09;
 }

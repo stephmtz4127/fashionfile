@@ -35,3 +35,11 @@
 .dropdownAddress {
   margin-right: 22px;
 }
+
+.dropdownAddress:hover {
+  background-color: #f49 !important;
+}
+
+.dropdown.placeholder {
+  color: white !important;
+}

@@ -4,24 +4,24 @@ import { Link, Outlet } from "react-router-dom";
 
 const Dashboard = () => {
   return (
-    <div className="loginDashCont">
+    <div className="loggedInUserDashCont">
       <div style={{ width: 250 }}>
         <div className="dashOptionsCont">
-          <Link to="mysettings" className="loginDashlabels">
+          <Link to="mysettings" className="userDashlabels">
             My Settings
           </Link>
-          <Link to="userNPass" className="loginDashlabels">
+          <Link to="userNPass" className="userDashlabels">
             Username/ Password
           </Link>
-          <Link to="addresses" className="loginDashlabels">
+          <Link to="addresses" className="userDashlabels">
             Addresses
           </Link>
-          <Link to="paymentOptions" className="loginDashlabels">
+          <Link to="paymentOptions" className="userDashlabels">
             Payment Options
           </Link>
           <Link
             to="emailPreferences"
-            className="loginDashlabels"
+            className="userDashlabels"
             style={{ borderBottom: "none" }}
           >
             Email Preferences
@@ -32,14 +32,14 @@ const Dashboard = () => {
           style={{ marginTop: "20px", marginBottom: "10px" }}
         >
           <label
-            className="loginDashlabels"
+            className="userDashlabels"
             style={{ backgroundColor: "rgb(245, 245, 245)" }}
           >
             Seller Stats
           </label>
           <Link
             to="activeQuotes"
-            className="loginDashlabels"
+            className="userDashlabels"
             style={{ borderBottom: "none" }}
           >
             Active Quotes

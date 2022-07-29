@@ -8,6 +8,8 @@ import SearchBar from "../components/SearchBar";
 import { useDispatch, useSelector } from "react-redux";
 import { Logout, getLoggedIn } from "../reducer/userSlice";
 import { DesignerDropdown } from "./DesignerDropdown";
+import { SaleDropdown } from "./SaleDropdown";
+import { BagsDropdown } from "./BagsDropdown";
 
 const formsToggle = "login";
 
@@ -55,59 +57,60 @@ const NavTwo = () => {
             Sell
           </Link>
         </DropDownMenu>
-
-        <Link className="userLinks" to="/following">
-          Following
-        </Link>
         {isLoggedIn && (
-          <DropDownMenu
-            id="account-drop-button"
-            menuList={
-              <MenuList style={{ outline: "none" }}>
-                <MenuItem>
-                  <Link
-                    to="/user/dashboard/mysettings"
-                    className="dropDownItems"
-                  >
-                    Dashboard
-                  </Link>
-                </MenuItem>
-                <MenuItem>
-                  <Link to="/user/alerts" className="dropDownItems">
-                    Alerts
-                  </Link>
-                </MenuItem>
-                <MenuItem>
-                  <Link to="/user/purchases" className="dropDownItems">
-                    My Purchases
-                  </Link>
-                </MenuItem>
-                <MenuItem>
-                  <Link to="/user/sales" className="dropDownItems">
-                    My Sales
-                  </Link>
-                </MenuItem>
-                <MenuItem onClick={logoutBtn} className="dropDownItems">
-                  Sign Out
-                </MenuItem>
-              </MenuList>
-            }
-          >
-            <label className="userLinks"> My Account</label>
-          </DropDownMenu>
+          <>
+            <Link className="userLinks" to="/user/items">
+              Following
+            </Link>
+            <DropDownMenu
+              id="account-drop-button"
+              menuList={
+                <MenuList style={{ outline: "none" }}>
+                  <MenuItem>
+                    <Link
+                      to="/user/dashboard/mysettings"
+                      className="dropDownItems"
+                    >
+                      Dashboard
+                    </Link>
+                  </MenuItem>
+                  <MenuItem>
+                    <Link to="/user/alerts" className="dropDownItems">
+                      Alerts
+                    </Link>
+                  </MenuItem>
+                  <MenuItem>
+                    <Link to="/user/purchases" className="dropDownItems">
+                      My Purchases
+                    </Link>
+                  </MenuItem>
+                  <MenuItem>
+                    <Link to="/user/sales" className="dropDownItems">
+                      My Sales
+                    </Link>
+                  </MenuItem>
+                  <MenuItem onClick={logoutBtn} className="dropDownItems">
+                    Sign Out
+                  </MenuItem>
+                </MenuList>
+              }
+            >
+              <label className="userLinks"> My Account</label>
+            </DropDownMenu>
+          </>
         )}
         {!isLoggedIn && (
           <Link className="userLinks" to="login">
             Sign In
           </Link>
         )}
-        <Link className="userLinks" to="/shoppingBag">
+        <Link className="userLinks" to="/shoppingCart">
           Shopping Bag
         </Link>
       </div>
       <div className="bisNameSearchBarCont">
         <Link to="/" className="bissName">
-          FASHIONPHILE
+          FASHIONFILE
         </Link>
         <div>
           <SearchBar />
@@ -117,19 +120,20 @@ const NavTwo = () => {
         <div className="homeNav">
           <Link
             to="/newArrivals"
-            className="navLinks"
-            style={{ marginLeft: 0 }}
+            className="newArrivalLink"
+            // style={{ marginLeft: 0 }}
           >
             New Arrivals
           </Link>
-          <DesignerDropdown />
-
-          <Link to="/bags" className="navLinks">
-            Bags
-          </Link>
-          <Link to="/sale" className="navLinks">
-            Sale
-          </Link>
+          <div style={{ width: "100px", paddingTop: "3px" }}>
+            <DesignerDropdown />
+          </div>
+          <div style={{ width: "70px" }}>
+            <BagsDropdown />
+          </div>
+          <div style={{ width: "60px" }}>
+            <SaleDropdown />
+          </div>
         </div>
         <div className="emtDiv"></div>
       </div>
